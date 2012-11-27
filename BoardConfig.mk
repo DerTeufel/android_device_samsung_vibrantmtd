@@ -27,6 +27,9 @@ BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/vibrantmtd/recovery/rec
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := false
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/vibrantmtd/bluetooth
+
 TARGET_OTA_ASSERT_DEVICE := vibrant,vibrantmtd,SGH-T959
 
 # Import the aries-common BoardConfigCommon.mk
