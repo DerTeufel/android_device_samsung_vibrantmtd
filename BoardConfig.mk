@@ -23,9 +23,8 @@ TARGET_KERNEL_CONFIG := cyanogenmod_vibrantmtd_defconfig
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/vibrantmtd/recovery/recovery_keys.c
 
-# Boot Animation
-TARGET_BOOTANIMATION_PRELOAD := true
-TARGET_BOOTANIMATION_TEXTURE_CACHE := false
+# Telephony
+BOARD_USES_FROYO_RILCLIENT := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/vibrantmtd/bluetooth

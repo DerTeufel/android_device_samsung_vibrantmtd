@@ -18,17 +18,13 @@ PRODUCT_COPY_FILES := \
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/ramdisk/init.aries.rc:root/init.aries.rc \
+	device/samsung/vibrantmtd/ramdisk/init.target.rc:root/init.target.rc \
 	device/samsung/vibrantmtd/ramdisk/init.aries.gps.rc:root/init.aries.gps.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/keys/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
 	device/samsung/vibrantmtd/keys/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl
-
-# No ASLR!
-PRODUCT_PACKAGES += \
-    noaslr
 
 # GPS
 PRODUCT_PACKAGES += \
